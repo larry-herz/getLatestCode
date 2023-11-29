@@ -36,7 +36,7 @@ func pullLatestCode(targetDir string) {
 
 		// Check if the directory is a git repo
 		if info.IsDir() && isGitRepository(path) {
-			fmt.Printf("Precessing Git repo: %s\n", path)
+			fmt.Printf("Processing Git repo: %s\n", path)
 
 			// Check if a remote has been configured
 			remoteURL, err := getGitRemote(path)
